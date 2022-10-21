@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    --fondo_oscuro : #8015AD;
+    --contraste_oscuro : #84AD11 ;
+    --contraste_claro: #CDFA52 ;
+    --fondo_claro: #CB52FF;
+    --principal: #C038FA;
+
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: var(--principal);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 380px;
+}
+
+/* Ordenes generales */
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.btn_newsletter {
+    height: 31px;
+    border: 0;
+    padding: 0 10px ;
+    background-color: var(--contraste_oscuro);
+    font-weight: bold;
+}
+
+hr{
+    height: 2px;
+    background-color: var(--contraste_oscuro);
+}
+
+
+ /* Header */
+
+header {
+    background-color: var(--fondo_oscuro);
+    color: antiquewhite;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 2px solid var(--contraste_oscuro);
+}
+
+header a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+header li {
+    display: inline;
+    float: left;
+    padding: 0 20px;
+    
+}
+
+header a:hover {
+    color: var(--contraste_oscuro);
+    font-weight: 400px;
+}
+
+header #logo {
+    float: left;
+}
+
+header nav {
+    margin-top: 10px;
+    float: right;
+}
+
+.marcado{
+    color: var(--contraste_oscuro);
+    font-weight: 900;
+}
+
+/* Vidriera */
+
+#vidriera {
+    min-height: 400px;
+    background-image: url(img/vidriera_dark.jpg);
+    background-size: cover;
+    background-position: center;
+    color: azure;
+    text-align: center;
+}
+
+#vidriera h1 {
+    font-size: 60px;
+    margin: 90px 0 15px;
+}
+
+#vidriera p {
+    font-size: 25px;
+}
+
+/* Newsletter */
+#newsletter {
+    padding: 15px;
+    background-color: var(--fondo_claro);
+    color: azure;
+}
+
+#newsletter h3 {
+    float: left;
+    margin-top: 5px;
+}
+
+#newsletter form {
+    float: right;
+}
+
+#newsletter input {
+    padding: 4px;
+    height: 20px;
+    width: 250px;
+}
+
+/* Boxes */
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 10px ;
+}
+
+#boxes img {
+    width: 200px;
+}
+
+#boxes p {
+    font-size: 13px;
+    padding: 0 20px;
+    color: rgb(54, 54, 54);
+}
+
+#boxes h2 {
+    font-size: 30px;
+    text-align: left;
+    color: #106b8a;
+
+}
+
+#boxes h3 {
+    color: rgb(57, 56, 56);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--contraste_oscuro);
+    color: azure;
+    font-size: 15px;
+    line-height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Somos */
+#vidriera_somos {
+    background-image: url(img/header1.jpg);
+    min-height: 220px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgba(240, 255, 255, 0.851);
+}
+
+#vidriera_somos h1 {
+    text-transform: uppercase;
+    line-height: 200px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+article.texto_somos {
+    float: left;
+    max-width: 60%;
+    margin-top: 15px;
+
+}
+
+aside.cuadrito {
+    float: right;
+    width: 30%;
+    background-color: var(--fondo_oscuro);
+    color: aliceblue;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.texto_somos h2 {
+    color: var(--contraste_oscuro);
+    font-weight: bold;
+}
+
+.texto_somos p {
+    color: var(--contraste_claro);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.texto_somos .destacado {
+    background-color: var(--contraste_oscuro);
+    color: aliceblue;
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* Contacto */
+#vidriera_contacto{
+    background-image: url(img/header3.jpg);
+    min-height: 220px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgba(240, 255, 255, 0.851);
+}
+
+#vidriera_contacto h1 {
+    text-transform: uppercase;
+    line-height: 200px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+aside.cuadrito .contacto input,
+aside.cuadrito .contacto textarea {
+    width: 90%;
+    margin: 5px;
+}
+
+::placeholder {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Media Query */
+@media only screen and (max-width: 768px) {
+    header {
+        padding-bottom: 20px;
+    }
+    header #logo, 
+    header nav, 
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    header li {
+        padding: 0 10px;
+    }
+    header a {
+        font-size: 15px;
+    }
+    #vidriera h1 {
+        margin-top: 40px;
+        font-size: 50px;
+    }
+    #vidriera p {
+        font-size: 18px;
+    }
+    #newsletter h3, 
+    #newsletter form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #newsletter input {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    .btn_newsletter {
+        width: 100%;
+        display: block;
+    }
+
+    #boxes .box {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #boxes h3 {
+        font-size: 20px;
+    }
+    #boxes h2 {
+        text-align: center;
+        font-size: 25px;
+        padding: 0 50px;
+    }
+
+    /* somos query */
+    article.texto_somos {
+        margin: auto;
+        max-width: 100%;
+        float: none;
+        text-align: left;
+        width: 100%;
+    }
+
+    aside.cuadrito {
+        max-width: 100%;
+        float: none;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+        margin-top: 10px;
+    }
+    
+    .texto_somos h2  {
+        font-size: 40px;
+    }
+
+    aside.cuadrito h3 {
+        font-size: 32px;
+    }
+
+    /* Contacto Query */
+    #vidrieraContacto {
+        font-size: 60px;
+    }
+    
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Trabajo practico individual realizando una pagina web con subsecciones para la materia Diseño y Desarrollo WEB UADE 2022">
+    <meta name="keywords" content="trabajo practico, ejercicio individual, diseño, desarrollo, web, uade, costa argentina, programacion, 2022">
+    <meta property="og:image" content="./img/ideas.jpg">
+    <link rel="shortcut icon" href="./img/favicon.ico " type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Contacto | Diseño y desarrollo web</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div id="logo">
+                <h1><span class="marcado" >Diseño</span> y Desarrollo Web</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="somos.html">Somos</a></li>
+                    <li><a href="ideas.html">Ideas</a></li>
+                    <li><a href="contacto.html" class="marcado">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="vidriera_contacto">
+        <div class="contenedor">
+            <h1>
+                Contacto
+            </h1>
+        </div>
+    </section>
+    <section>
+        <div class="contenedor">
+            <article class="texto_somos">
+                <h2>Ubicacion</h2>
+                <p >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsum at fugiat ea? Quasi hic impedit molestias, vel provident.
+                </p>
+                <p class="destacado">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.562345351107!2d-56.88588709999997!3d-37.1155342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c9d228e112bdb%3A0x44a3c9c5a9136bd1!2sUADE%20Campus%20Costa%20Argentina!5e0!3m2!1ses-419!2sar!4v1665706524092!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+                <p class="destacado">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsum at fugiat ea? Quasi hic impedit molestias, vel provident, facere distinctio perspiciatis cupiditate modi dolorum nihil voluptas aliquid, architecto doloremque?
+                </p>
+            </article>
+            <aside class="cuadrito">
+                <h3>
+                    Contactanos
+                </h3>
+                <form action="envio.php" method="post" class="contacto">
+                    <div>
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div>
+                        <label for="mail">Email</label>
+                        <input type="email" id="email" placeholder="tuemail@ejemplo.com">
+                    </div>
+                    <div>
+                        <label for="msn">Mensaje</label>
+                        <textarea name="mensaje" id="msn" cols="30" rows="10" placeholder="Comentario"></textarea>
+                    </div>
+                    <button type="submit" class="btn_newsletter">Enviar</button>
+                </form>
+            </aside>
+            <aside class="cuadrito">
+                <h3>
+                    Quienes somos?
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsum at fugiat ea? Quasi hic impedit molestias, vel provident, facere distinctio perspiciatis cupiditate modi dolorum nihil voluptas aliquid, architecto doloremque?
+                </p>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <p>Diseño y Desarrollo Web - copyright &copy; 2022</p>
+    </footer>
+</body>
+</html>
