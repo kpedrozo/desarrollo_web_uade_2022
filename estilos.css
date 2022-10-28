@@ -38,8 +38,9 @@ body{
     border: 0;
     padding: 0 10px ;
     background-color: var(--comp_claro);
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--oscuro);
+    text-transform: uppercase;
 }
 
 .btn_newsletter:hover {
@@ -151,6 +152,10 @@ header nav {
 
 #boxes img {
     width: 200px;
+}
+
+#triqueta img {
+    filter: brightness(1.4);
 }
 
 #boxes p {
