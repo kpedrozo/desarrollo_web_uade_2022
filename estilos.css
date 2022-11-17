@@ -33,6 +33,7 @@ body{
     overflow: hidden;
 }
 
+
 .btn_newsletter {
     height: 31px;
     border: 0;
@@ -222,6 +223,10 @@ aside.cuadrito {
     padding: 15px;
 }
 
+/* aside.cuadrito div {
+    background-color: aliceblue;
+} */
+
 .texto_somos h2 {
     color: var(--oscuro);
     font-weight: bold;
@@ -266,6 +271,105 @@ aside.cuadrito .contacto textarea {
 ::placeholder {
     font-family: 'Quicksand', sans-serif;
 }
+
+#uade:hover {
+    color: var(--principal);
+    
+}
+
+#uade {
+    text-decoration: none;
+}
+
+#recomendacion {
+    background-color: var(--principal);
+}
+
+.WidgetTitle__Header-sc-ruy1gu-2 {
+    visibility: hidden ;
+}
+
+.WidgetTitle__Container-sc-173f1y-0 {
+    display: none;
+}
+
+/* Ideas */
+#vidriera_ideas{
+    background-image: url(img/diseño-web1.jpg);
+    min-height: 220px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgba(240, 255, 255, 0.851);
+}
+
+
+#ideas_subtitulo{
+    float: none !important;
+    text-align: center;
+}
+
+
+#boxes .box_ideas {
+    float: left;
+    width: 30%;
+    text-align: start;
+    padding: 10px ;
+    min-width: 250px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+
+#boxes .box_ideas p {
+    font-size: 13px;
+    padding: 5px 0;
+    color: var(--oscuro);
+    margin-bottom: 10px;
+}
+
+#boxes .box_ideas img {
+    margin-top: 10px;
+    width: 240px;
+}
+
+#separador {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.contenedor_ideas{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#paleta_colores_media{
+    display: none;
+    /* background-image: url('img/paleta_de_colores.png');
+    background-size: 300px 300px;
+    width: 300px;
+    height: ; */
+}
+
+
+#paleta_colores{
+    display: inline-block;
+}
+
+
+
+
 
 /* Media Query */
 @media only screen and (max-width: 768px) {
@@ -357,4 +461,65 @@ aside.cuadrito .contacto textarea {
         font-size: 60px;
     }
     
+
+    /* Ideas Query*/
+
+#boxes .box_ideas {
+    width: 100%;
+    text-align: start;
+    padding: 10px ;
+    min-width: 250px;
+}
+
+
+#boxes .box_ideas p {
+    font-size: 18px;
+    padding: 5px 0;
+    color: var(--oscuro);
+}
+
+#boxes .box_ideas img {
+    width: 400px;
+}
+
+#separador {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+#boxes .box_ideas h3{
+    font-size: 25px;
+}
+
+
+.contenedor_ideas{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* 
+#paleta_colores {
+    background-image: url('img/diseño-web1.jpg');
+} */
+
+#paleta_colores_media{
+    display: inline-block;
+}
+
+
+#paleta_colores{
+    display: none;
+}
+
+
+
+
+
+
+
 }
