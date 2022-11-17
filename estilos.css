@@ -312,29 +312,31 @@ aside.cuadrito .contacto textarea {
 
 #boxes .box_ideas {
     float: left;
-    width: 30%;
     text-align: start;
-    padding: 10px ;
-    min-width: 250px;
-
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 25px;
+    background: var(--oscuro);
+}
+
+#boxes .box_ideas h3 {
+    font-size: 21px;
+    color: var(--claro);
+    margin-bottom: 30px;
 }
 
 
 #boxes .box_ideas p {
-    font-size: 13px;
+    font-size: 15px;
     padding: 5px 0;
-    color: var(--oscuro);
+    color: var(--claro);
     margin-bottom: 10px;
 }
 
 #boxes .box_ideas img {
-    margin-top: 10px;
-    width: 240px;
+    width: 100%;
+    max-width: 50%;
+    object-fit: cover;
 }
 
 #separador {
@@ -343,27 +345,33 @@ aside.cuadrito .contacto textarea {
     overflow: hidden;
 }
 
+.info_box_ideas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 5%;
+    width: 50%;
+    max-width: 50%;
+}
 
 .contenedor_ideas{
     width: 80%;
     margin: auto;
     overflow: hidden;
-    display: flex;
+    margin-top: 20px;
+    /* display: flex; */
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 
-#paleta_colores_media{
+.box_ideas_img_media{
     display: none;
-    /* background-image: url('img/paleta_de_colores.png');
-    background-size: 300px 300px;
-    width: 300px;
-    height: ; */
 }
 
 
-#paleta_colores{
+.box_ideas_img{
     display: inline-block;
 }
 
@@ -469,17 +477,21 @@ aside.cuadrito .contacto textarea {
     text-align: start;
     padding: 10px ;
     min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 #boxes .box_ideas p {
     font-size: 18px;
     padding: 5px 0;
-    color: var(--oscuro);
+    color: var(--claro);
 }
 
 #boxes .box_ideas img {
-    width: 400px;
+    width: 90%;
+    max-width: 90%;
 }
 
 #separador {
@@ -501,18 +513,29 @@ aside.cuadrito .contacto textarea {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
+
+.info_box_ideas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    max-width: 85%;
+}
+
 /* 
 #paleta_colores {
     background-image: url('img/diseño-web1.jpg');
 } */
 
-#paleta_colores_media{
+.box_ideas_img_media{
     display: inline-block;
 }
 
 
-#paleta_colores{
+.box_ideas_img{
     display: none;
 }
 
