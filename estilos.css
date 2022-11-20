@@ -307,10 +307,10 @@ aside.cuadrito .contacto textarea {
 
 #uade:hover {
     color: var(--principal);
-
 }
 
 #uade {
+    color: var(--oscuro) ;
     text-decoration: none;
 }
 
