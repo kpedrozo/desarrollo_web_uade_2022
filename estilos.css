@@ -1,12 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* --fondo_oscuro : #5E78FF;
-    --contraste_oscuro : #BC4BFF ;
-    --contraste_claro: #F280EB ;
-    --fondo_claro: #80BFF2;
-    --principal: #9C85E6; */
-
     --oscuro : #68488C;
     --claro : #D8B5FF;
     --principal : #AC85DA;
@@ -33,6 +27,9 @@ body{
     overflow: hidden;
 }
 
+#texto_index {
+    text-align: center;
+}
 
 .btn_newsletter {
     height: 31px;
@@ -75,7 +72,7 @@ header li {
     display: inline;
     float: left;
     padding: 0 20px;
-    
+
 }
 
 header a:hover {
@@ -179,15 +176,51 @@ header nav {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     margin-top: 20px;
     background-color: var(--comp_oscuro);
     color: var(--comp_claro);
-    font-size: 15px;
-    line-height: 100px;
+    font-size: 19px;
+    line-height: 40px;
     position: absolute;
     bottom: 0;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+
+#datos {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+}
+
+#avatar {
+    max-height: 200px;
+}
+
+#avatar:hover{
+    
+}
+
+#logos_redes {
+    margin-right: 40px;
+}
+
+#logos_redes img {
+    max-height: 60px;
+    margin: 8px;
+}
+
+#logos_redes img:hover {
+filter: drop-shadow(4px 4px 4px var(--comp_claro));
+
 }
 
 /* Somos */
@@ -274,7 +307,7 @@ aside.cuadrito .contacto textarea {
 
 #uade:hover {
     color: var(--principal);
-    
+
 }
 
 #uade {
@@ -360,9 +393,7 @@ aside.cuadrito .contacto textarea {
     margin: auto;
     overflow: hidden;
     margin-top: 20px;
-    /* display: flex; */
     justify-content: space-between;
-    /* flex-wrap: wrap; */
 }
 
 
@@ -384,8 +415,8 @@ aside.cuadrito .contacto textarea {
     header {
         padding-bottom: 20px;
     }
-    header #logo, 
-    header nav, 
+    header #logo,
+    header nav,
     header nav li {
         float: none;
         text-align: center;
@@ -408,7 +439,7 @@ aside.cuadrito .contacto textarea {
     #vidriera p {
         font-size: 18px;
     }
-    #newsletter h3, 
+    #newsletter h3,
     #newsletter form {
         float: none;
         text-align: center;
@@ -455,7 +486,7 @@ aside.cuadrito .contacto textarea {
         width: 90%;
         margin-top: 10px;
     }
-    
+
     .texto_somos h2  {
         font-size: 40px;
     }
@@ -468,7 +499,7 @@ aside.cuadrito .contacto textarea {
     #vidrieraContacto {
         font-size: 60px;
     }
-    
+
 
     /* Ideas Query*/
 
@@ -525,11 +556,6 @@ aside.cuadrito .contacto textarea {
     max-width: 85%;
 }
 
-/* 
-#paleta_colores {
-    background-image: url('img/diseño-web1.jpg');
-} */
-
 .box_ideas_img_media{
     display: inline-block;
 }
@@ -540,9 +566,37 @@ aside.cuadrito .contacto textarea {
 }
 
 
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: var(--comp_oscuro);
+    color: var(--comp_claro);
+    font-size: 19px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#avatar {
+    margin-right: auto;
+}
+
+#logos_redes {
+    margin-top: 20px;
+    margin-right: 0;
+}
 
 
-
+#datos {
+    width: 100%;
+}
 
 
 }
